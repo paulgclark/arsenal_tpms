@@ -1,0 +1,2 @@
+Chevy Corvette Z06  2012  OOK  180.4us/360us PWM (Hi/Lo)
+
