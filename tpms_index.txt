@@ -1,2 +1,31 @@
 Chevy Corvette Z06  2012  OOK  180.4us/360us PWM (Hi/Lo)
+- 6100E78F
 
+Toyota Tacoma
+- 7006B81
+
+
+1. capture signal (optional)
+uhd_rx_cfile -A RX2 -f 315e6 test_315M_1Msps.cf32
+
+2. reverse captured signal:
+Flowgraph with file input, QTGF, tuner, and parallel OOK/FSK demod
+- modulation
+- signal timing
+* move the squelch and threshold levels around until one of the signals appears
+
+3. CLI for demod of captured signal: headless flowgraph
+output for 4 decoding modes:
+- NRZ
+- Manch 
+- Manch inv
+- diff Manch
+Goal is to extract the ID from the payload
+
+4. Build logger for FSK and run on:
+- captured file from street?
+- street file with two of our TPMS signals inserted at one point?
+- retransmitted street file with our TPMS inserted 
+- logging is just encoded payloads
+
+5. Bonus: get the second TPMS ID from the Toyota
