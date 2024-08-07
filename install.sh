@@ -3,6 +3,8 @@
 
 # install uhd drivers
 sudo apt -y install libuhd-dev
+sudo apt -y install uhd-host
+sudo uhd_images_downloader
 
 # install gnuradio
 sudo apt -y install gnuradio-dev

@@ -1,7 +1,7 @@
-#!/usr/bin/bash
+#!/usr/bin/bash -x
 # this script is used to refresh an install in an lab machine for 
 # the next student; you won't need it for personal use
-working_dir_name=~/tpms_lab
+working_dir=~/tpms_lab
 
 # remove the previous student's lab
 rm -rf $working_dir
