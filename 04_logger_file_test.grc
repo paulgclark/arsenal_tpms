@@ -229,7 +229,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: /home/paul/class/arsenal_tpms/solution/quickstart_315M_1Msps.cf32
+    file: user_315M_1Msps.cf32
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
